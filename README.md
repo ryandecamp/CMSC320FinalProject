@@ -30,3 +30,9 @@ Instead, each Oscar has its own flag:
     "Oscar_nominated_categories"
 ]
 ```
+
+#### release_date.day-of-week
+
+The original `oscar_movies.csv` uses 1: Monday, 7: Sunday. 
+`datetime` module uses 0: Monday, 6: Sunday. 
+To be in line with Python (and ISO) standard, datetimes are shifted to be in line with `datetime` module in preprocessing.
